@@ -1,7 +1,7 @@
 ## 7월 6일 문제 풀이
 # python
 
-'''
+```
 
 # 연산자 연습문제 5
 a = 0.2 * 100
@@ -231,4 +231,4 @@ c = dict(zip(a, b))
 for key, val in c.items():
     print("%s : %d" % (key, val))
 
-'''
+```
