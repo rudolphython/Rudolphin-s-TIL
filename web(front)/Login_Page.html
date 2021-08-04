@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">  <title>Document</title>
+  <link rel="stylesheet" href="07_bootstrap_align.css">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      }
+
+    .container {
+      width: 700px;
+      margin: 30px auto;
+    }
+    p {
+      font-family: Arial;
+    }
+
+    .box {
+      width: 700px;
+    }
+
+    .box2 {
+      width: 675px;
+      height: 450px;
+      padding:10px;
+      border-radius: 2px;
+      border: gray 1px solid;
+    }
+
+    .clearfix::after {
+      content: "";
+      display: block;
+      clear: both;
+    }
+
+    .box2 > hr {
+      background-color: blue;
+    }
+
+    .box3 {
+      width: 655px;
+      height: 700px;
+      padding:10px;
+      border: white;
+    }
+
+    .box4 {
+      width: 655px;
+      padding-top: 0px;
+      padding-bottom: 15px;
+      border: white;
+    }
+
+    .box5 {
+      width: 655px;
+      padding-top: 30px;
+      padding-bottom: 15px;
+      border: white;
+    }
+
+    .box6 {
+      width: 655px;
+      padding-top: 30px;
+      padding-bottom: 15px;
+      border: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .box6 > a {
+      padding-right: 20px;
+    }
+
+    .box5 > button {
+      width: 635px;
+    }
+  </style>
+  <title>Login Page</title>
+</head>
+<body>
+  <div class="container">
+    <div class="clearfix">
+      <div class="alert alert-danger d-flex align-items-center" role="alert">
+      <svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Danger:"><use xlink:href="#exclamation-triangle-fill"/></svg>
+      <div>
+        Invalid Login or password
+      </div>
+    </div>
+    <div class="box">
+      <h1>LOGIN</h1>
+    </div>
+    <hr>
+      <div class="box2">
+        <h4 class="text-center">Sign in</h4>
+        <hr>
+        <div class="box3">
+            <div class="box4">
+              <h5 class="fw-bolder">Username or email</h5>
+            </div>
+          <form class="form-signin" action="/login" method="get">
+            <label for="ID" class="visually-hidden"></label>
+            <input type="text" id="ID" name="ID" class="form-control" required autofocus>
+          </form>
+            <div class="box5">
+              <h5 class="fw-bolder">Password</h5>
+            </div>
+            <form class="form-signin" action="/login" method="get">
+              <label for="Password" class="visually-hidden"></label>
+              <input type="password" id="password" name="password" class="form-control" required autofocus>
+            </form>
+            <div class="box6">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                  Remember me
+                </label>
+              </div>
+                <a href="#" class="text-decoration-none">Forgot your password?</a>
+            </div>
+            <div class="box5">
+              <button type="button" class="btn btn-success">Sign in</button>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script></body>
+</body>
+</html>
